@@ -4,10 +4,10 @@ HAPS Project
 
 ### Idea
 
-    Implement Yolov7/v8 acceleration on FPGA, For Age group classification task.
+    Implement Yolo acceleration on FPGA, For Age group classification task.
     
 ### Related Paper
 
-    Yolov7
+    Yolo
     
     Moving Window Regression
