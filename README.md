@@ -16,13 +16,14 @@ HAPS_proj
 │   └───src
 │       │   adder_four_bit.v
 │       │   full_3.v
-│   │   file011.txt
-│   │   file012.txt
-│   │
-│   └───src
-│       │   file111.txt
-│       │   file112.txt
-│       │   ...
+│   │  board.tss
+│   │  df.fdc
+│   │  option.tcl
+│   │  partition.pcf
+│   │  uc_compile.utf
+│   │  vcs_dut.csh
+│   │  vlog_inputs.txt
+│   │  vlog2.txt
 │   
 └───Adder_reports
     │   full-reports-folder
