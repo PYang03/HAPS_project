@@ -2,12 +2,10 @@
 HAPS Project
 
 
-### Idea
+### Motivation
 
-    Implement Yolo acceleration on FPGA, For Age group classification task.
+    Personally, I don't have any experience of verilog, therefore it is very challenging for me to finish this project. I create a netlist of Synchronous 4-bit Adder, and convert their input with clock input. It's a simple netlist, but still makes me learned to do a full flow of FPGA implement with HAPS Protocompiler & vivado.
     
-### Related Paper
+### Files contain in this repo
 
-    Yolo
-    
-    Moving Window Regression
+
