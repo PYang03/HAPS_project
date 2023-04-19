@@ -1,5 +1,5 @@
 # HAPS_project
-#### HAPS Protocompiler Project of NTHU cource 11120CSR530600
+#### HAPS Protocompiler Project of NTHU CoSR course 11120CSR530600
 #### by Pin-Yuan Yang, 111501544, VLSI/CAD SCLab, College of Semiconductor Research, NTHU, Taiwan 
 
 
