@@ -1,0 +1,13 @@
+create_clock  -name {clk1} {p:clk1} -period {50} 
+create_clock  -name {clk2} {p:clk2} -period {48} 
+create_clock  -name {clk3} {p:clk3} -period {45} 
+create_clock  -name {clk4} {p:clk4} -period {43} 
+
+set_input_delay -max 6.00  -clock {c:clk1}  -add_delay {p:cin} 
+
+set_output_delay -max 6.00  -clock {c:clk1}  -add_delay {p:sum1} 
+set_output_delay -max 6.00  -clock {c:clk2}  -add_delay {p:sum2} 
+set_output_delay -max 6.00  -clock {c:clk3}  -add_delay {p:sum3} 
+set_output_delay -max 6.00  -clock {c:clk4}  -add_delay {p:sum4} 
+
+set_output_delay -max 6.00  -clock {c:clk4}  -add_delay {p:cout} 
