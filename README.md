@@ -9,13 +9,15 @@ HAPS Project
 ### Files contain in this repo
 ```
 HAPS_proj
+│
 │   README.md
 │   run.tcl   
 │
-└───Adder
-│   └───src
-│       │   adder_four_bit.v
-│       │   full_3.v
+│───Adder
+│   │───src
+│   │   │   adder_four_bit.v
+│   │   │   full_3.v
+│   │
 │   │  board.tss
 │   │  df.fdc
 │   │  option.tcl
@@ -26,6 +28,20 @@ HAPS_proj
 │   │  vlog2.txt
 │   
 └───Adder_reports
-    │   full-reports-folder
+│   │   #full-reports-folder
+│   
+└───synthesis_files
+│   └───FB1_uA
+│       └───vivado_srs
+│           │   area.txt
+│           │   clock_utilization.txt
+│           │   FB1_uA_timing_summary.txt
+│           │   FB1_uA_timing_summary_Min.txt
+│   └───FB1_uB
+│       └───vivado_srs
+│           │   area.txt
+│           │   clock_utilization.txt
+│           │   FB1_uB_timing_summary.txt
+│           │   FB1_uB_timing_summary_Min.txt
 ```
 
