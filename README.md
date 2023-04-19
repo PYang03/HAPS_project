@@ -13,10 +13,13 @@ HAPS_proj
 │   run.tcl   
 │
 └───Adder
+│   └───src
+│       │   adder_four_bit.v
+│       │   full_3.v
 │   │   file011.txt
 │   │   file012.txt
 │   │
-│   └───subfolder1
+│   └───src
 │       │   file111.txt
 │       │   file112.txt
 │       │   ...
