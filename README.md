@@ -8,11 +8,11 @@ HAPS Project
     
 ### Files contain in this repo
 ```
-project
+HAPS_proj
 │   README.md
-│   file001.txt    
+│   run.tcl   
 │
-└───folder1
+└───Adder
 │   │   file011.txt
 │   │   file012.txt
 │   │
