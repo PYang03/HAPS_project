@@ -21,8 +21,7 @@ HAPS_proj
 │       │   file112.txt
 │       │   ...
 │   
-└───folder2
-    │   file021.txt
-    │   file022.txt
+└───Adder_reports
+    │   full-reports-folder
 ```
 
