@@ -1,5 +1,5 @@
 # HAPS_proj
-#### HAPS Project by Pin-Yuan Yang, 111501544, VLSI/CAD SCLab, College of Semiconductor Research, NTHU, Taiwan 
+#### HAPS Protocompiler Project by Pin-Yuan Yang, 111501544, VLSI/CAD SCLab, College of Semiconductor Research, NTHU, Taiwan 
 
 
 ### Motivation
