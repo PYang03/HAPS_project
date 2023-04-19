@@ -1,0 +1,14 @@
+System Memory report for adder_four_bit
+==============================================================
+SLP project checksum             : 0x0
+Partition tool version           : 
+Synthesis tool version           : R-2020.12-SP1-1 (Apr  8 2022 21:27:16)
+FPGA Location                    : FB?_? (Type HAPS-100) (board cde order unspecified) (chip location unspecified) 
+System CAPIM address             : 56
+System CAPIM type                : 0x304
+Speed grade                      : 
+Chip ID                          : unspecified
+
+End System Memory report
+==============================================================
+

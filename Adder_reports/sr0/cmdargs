@@ -1,0 +1,1 @@
+run system_route -pcf Adder/partition.pcf -fdc Adder/design.fdc -optimization_priority multi_hop_path -estimate_timing 1 -out sr0

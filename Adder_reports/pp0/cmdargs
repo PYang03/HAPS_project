@@ -1,0 +1,1 @@
+run pre_partition -tss Adder/board.tss -fdc Adder/df.fdc -area_est 1 -out pp0

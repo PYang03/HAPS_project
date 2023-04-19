@@ -1,0 +1,1 @@
+run compile -ucdb adder_four_bit_ucdb -out c0

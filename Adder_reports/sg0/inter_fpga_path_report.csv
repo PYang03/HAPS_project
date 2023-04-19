@@ -1,0 +1,14 @@
+Id,Slack (ns),Source Clock,Sink Clock,Exception,Hops,TDMs used per hop**,Total TDM delay (ns)*,User logic delay (ns),Path delay (ns),Requirement (ns),Start Point,End Point,Net Name,
+1,988.935,adder_four_bit|clk1:r,System:r,-,-,x1,(trace:5.146) = 5.146,5.102,11.065,1000.000,FB1.uA.dut_inst.aptn_reset_sync_cin.Q,sum2.sum2,sum2
+2,988.949,adder_four_bit|clk1:r,System:r,-,-,x1,(trace:5.146) = 5.146,5.089,11.051,1000.000,FB1.uA.dut_inst.aptn_reset_sync_cin.Q,sum1.sum1,sum1
+3,988.949,System:r,System:r,-,-,x1,(trace:5.146) = 5.146,2.498,11.051,1000.000,clk2.clk2,sum2.sum2,sum2
+4,988.962,System:r,System:r,-,-,x1,(trace:5.146) = 5.146,2.485,11.038,1000.000,clk2.clk2,sum1.sum1,sum1
+5,988.964,System:r,System:r,-,-,x1,(trace:5.146) = 5.146,2.483,11.051,1000.000,clk3.clk3,sum2.sum2,sum2
+6,988.964,System:r,System:r,-,-,x1,(trace:5.146) = 5.146,2.483,11.051,1000.000,clk4.clk4,sum2.sum2,sum2
+7,989.132,System:r,System:r,-,-,x1,(trace:5.146) = 5.146,2.315,11.051,1000.000,clk1.clk1,sum2.sum2,sum2
+8,989.158,System:r,System:r,-,-,x1,(trace:5.146) = 5.146,2.289,11.038,1000.000,clk1.clk1,sum1.sum1,sum1
+9,989.950,adder_four_bit|clk1:r,System:r,-,-,x1,(trace:3.753) = 3.753,5.480,10.050,1000.000,FB1.uA.dut_inst.aptn_reset_sync_cin.Q,sum3.sum3,c2
+10,989.964,System:r,System:r,-,-,x1,(trace:3.753) = 3.753,2.498,10.036,1000.000,clk2.clk2,sum3.sum3,c2
+11,989.979,System:r,System:r,-,-,x1,(trace:3.753) = 3.753,2.483,10.036,1000.000,clk3.clk3,sum3.sum3,c2
+12,989.979,System:r,System:r,-,-,x1,(trace:3.753) = 3.753,2.483,10.036,1000.000,clk4.clk4,sum3.sum3,c2
+13,990.147,System:r,System:r,-,-,x1,(trace:3.753) = 3.753,2.315,10.036,1000.000,clk1.clk1,sum3.sum3,c2

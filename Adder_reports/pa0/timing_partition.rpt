@@ -1,0 +1,155 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws28
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 8388608 (bytes)
+
+
+Database state : /home/course/csr530606/Adder/|pa0
+Synopsys ProtoCompiler Partitioner/Router, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+To see more or fewer paths in this report, use option '-report_timing_paths <count>'
+
+Start points with multiple hops: 4
+End points with multiple hops: 12
+Printing up to 10 paths
+
+Path #1 through net sum3
+Hops  Type*         Bin/TDM            Clock/Cell/Net  Cell_Type  
+----------------------------------------------------------------
+      Start Clock                      clk1:r                     
+0     Port          FB1.PLL1           clk1                       
+      Net(DP)                          clk1                       
+0     Cell          FB1.uA             ad0             full_3_3   
+      Net                              c1                         
+0     Cell          FB1.uA             ad1             full_3_2   
+      Net                              c2                         
+1     Cell          FB1.uB             ad2             full_3_1   
+      Net(DP)                          sum3                       
+1     Port          TOP_IO_HT3_FB1_B5  sum3                       
+      End Clock(s)                     clk3:r                     
+================================================================
+     *Net Flags: A=AsynchReset  B=Bidir/Tristate  C=Clock  D=Direct  F=Feedthrough  P=PortNet 
+
+Path #2 through net clk2
+Hops  Type*         Bin/TDM            Clock/Cell/Net  Cell_Type  
+----------------------------------------------------------------
+      Start Clock                      clk2:r                     
+0     Port          FB1.PLL1           clk2                       
+      Net(DP)                          clk2                       
+0     Cell          FB1.uA             ad0             full_3_3   
+      Net                              c1                         
+0     Cell          FB1.uA             ad1             full_3_2   
+      Net                              c2                         
+1     Cell          FB1.uB             ad2             full_3_1   
+      Net(DP)                          sum3                       
+1     Port          TOP_IO_HT3_FB1_B5  sum3                       
+      End Clock(s)                     clk3:r                     
+================================================================
+     *Net Flags: A=AsynchReset  B=Bidir/Tristate  C=Clock  D=Direct  F=Feedthrough  P=PortNet 
+
+Path #3 through net cout
+Hops  Type*         Bin/TDM            Clock/Cell/Net  Cell_Type  
+----------------------------------------------------------------
+      Start Clock                      clk1:r                     
+0     Port          FB1.PLL1           clk1                       
+      Net(DP)                          clk1                       
+0     Cell          FB1.uA             ad0             full_3_3   
+      Net                              c1                         
+0     Cell          FB1.uA             ad1             full_3_2   
+      Net                              c2                         
+1     Cell          FB1.uB             ad2             full_3_1   
+      Net                              c3                         
+1     Cell          FB1.uB             ad3             full_3_0   
+      Net(DP)                          cout                       
+1     Port          TOP_IO_HT3_FB1_B5  cout                       
+      End Clock(s)                     clk4:r                     
+================================================================
+     *Net Flags: A=AsynchReset  B=Bidir/Tristate  C=Clock  D=Direct  F=Feedthrough  P=PortNet 
+
+Path #4 through net sum4
+Hops  Type*         Bin/TDM            Clock/Cell/Net  Cell_Type  
+----------------------------------------------------------------
+      Start Clock                      clk1:r                     
+0     Port          FB1.PLL1           clk1                       
+      Net(DP)                          clk1                       
+0     Cell          FB1.uA             ad0             full_3_3   
+      Net                              c1                         
+0     Cell          FB1.uA             ad1             full_3_2   
+      Net                              c2                         
+1     Cell          FB1.uB             ad2             full_3_1   
+      Net                              c3                         
+1     Cell          FB1.uB             ad3             full_3_0   
+      Net(DP)                          sum4                       
+1     Port          TOP_IO_HT3_FB1_B5  sum4                       
+      End Clock(s)                     clk4:r                     
+================================================================
+     *Net Flags: A=AsynchReset  B=Bidir/Tristate  C=Clock  D=Direct  F=Feedthrough  P=PortNet 
+
+Path #5 through net clk4
+Hops  Type*         Bin/TDM            Clock/Cell/Net  Cell_Type  
+----------------------------------------------------------------
+      Start Clock                      clk4:r                     
+0     Port          FB1.PLL2           clk4                       
+      Net(DP)                          clk4                       
+0     Cell          FB1.uA             ad1             full_3_2   
+      Net                              c2                         
+1     Cell          FB1.uB             ad2             full_3_1   
+      Net(DP)                          sum3                       
+1     Port          TOP_IO_HT3_FB1_B5  sum3                       
+      End Clock(s)                     clk3:r                     
+================================================================
+     *Net Flags: A=AsynchReset  B=Bidir/Tristate  C=Clock  D=Direct  F=Feedthrough  P=PortNet 
+
+Path #6 through net clk3
+Hops  Type*         Bin/TDM            Clock/Cell/Net  Cell_Type  
+----------------------------------------------------------------
+      Start Clock                      clk3:r                     
+0     Port          FB1.PLL1           clk3                       
+      Net(DP)                          clk3                       
+0     Cell          FB1.uA             ad1             full_3_2   
+      Net                              c2                         
+1     Cell          FB1.uB             ad2             full_3_1   
+      Net(DP)                          sum3                       
+1     Port          TOP_IO_HT3_FB1_B5  sum3                       
+      End Clock(s)                     clk3:r                     
+================================================================
+     *Net Flags: A=AsynchReset  B=Bidir/Tristate  C=Clock  D=Direct  F=Feedthrough  P=PortNet 
+
+Path #7 through net sum1
+Hops  Type*         Bin/TDM            Clock/Cell/Net  Cell_Type  
+----------------------------------------------------------------
+      Start Clock                      clk1:r                     
+0     Port          FB1.PLL1           clk1                       
+      Net(DP)                          clk1                       
+0     Cell          FB1.uA             ad0             full_3_3   
+      Net(DP)                          sum1                       
+0     Port          TOP_IO_HT3_FB1_B5  sum1                       
+      End Clock(s)                     clk1:r                     
+================================================================
+     *Net Flags: A=AsynchReset  B=Bidir/Tristate  C=Clock  D=Direct  F=Feedthrough  P=PortNet 
+
+Path #8 through net sum2
+Hops  Type*         Bin/TDM            Clock/Cell/Net  Cell_Type  
+----------------------------------------------------------------
+      Start Clock                      clk1:r                     
+0     Port          FB1.PLL1           clk1                       
+      Net(DP)                          clk1                       
+0     Cell          FB1.uA             ad0             full_3_3   
+      Net                              c1                         
+0     Cell          FB1.uA             ad1             full_3_2   
+      Net(DP)                          sum2                       
+0     Port          TOP_IO_HT3_FB1_B5  sum2                       
+      End Clock(s)                     clk2:r                     
+================================================================
+     *Net Flags: A=AsynchReset  B=Bidir/Tristate  C=Clock  D=Direct  F=Feedthrough  P=PortNet 

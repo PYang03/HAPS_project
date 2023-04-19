@@ -1,0 +1,374 @@
+Using message severity preference file /home/course/csr530606/Adder/system_generate/sg0/syntmp/messagefilter.txt
+Note: Each entry: <message id>=<error | warning | note> in the message severity preference file overrides the default severity of message with corresponding id.
+
+@N: Setting severity of message DE107 to warning 
+# Wed Apr 19 10:35:33 2023
+
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws28
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/course/csr530606/Adder/|sg0
+Synopsys Xilinx Technology Mapper, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 237MB peak: 237MB)
+
+Using message severity preference file /home/course/csr530606/Adder/system_generate/sg0/syntmp/messagefilter.txt
+Note: Each entry: <message id>=<error | warning | note> in the message severity preference file overrides the default severity of message with corresponding id.
+
+@N: Setting severity of message DE107 to warning 
+@N: MF913 |Option synthesis_strategy=fast is enabled. 
+@N: MF248 |Running in 64-bit mode.
+@N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
+
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+@N: MF119 |Unified Time Budget flow enabled 
+
+Start loading fpga timing model (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 253MB peak: 253MB)
+
+
+Finished loading fpga timing model (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 782MB peak: 782MB)
+
+
+Finished insertion of fpga timing model (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 782MB peak: 782MB)
+
+@N: MF404 |Running Normal timing estimation with effort level 'LOW'
+
+Finished time budget netlist preparation (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 782MB peak: 782MB)
+
+
+Finished writer setup (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 782MB peak: 782MB)
+
+
+Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 782MB peak: 782MB)
+
+@N: MT649 |During time budgeting, Vivado latch mode is off. 
+@N: MT650 |During time budgeting, latch-based time borrowing is disabled. 
+@W: MT420 |Found inferred clock adder_four_bit|clk1 with period 1000.00ns. Please declare a user-defined clock on port clk1.
+
+
+@S0 |##### START OF TIMING REPORT #####[
+# Timing report written on Wed Apr 19 10:35:40 2023
+#
+
+
+Top view:               adder_four_bit
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Paths requested:        5
+The system contains the following FPGAs:
+    FB1.uA : XCVU19PFSVA3824, speedgrade -1-e
+    FB1.uB : XCVU19PFSVA3824, speedgrade -1-e
+Constraint File(s):    design.fdc (internally generated)
+                       
+@N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
+
+
+@S0.0 |Performance Summary
+*******************
+
+
+Worst slack in design: 988.935
+
+                        Requested     Estimated     Requested     Estimated                 Clock        Clock                
+Starting Clock          Frequency     Frequency     Period        Period        Slack       Type         Group                
+------------------------------------------------------------------------------------------------------------------------------
+adder_four_bit|clk1     1.0 MHz       90.4 MHz      1000.000      11.065        988.935     inferred     Inferred_clkgroup_0_1
+System                  1.0 MHz       90.5 MHz      1000.000      11.051        988.949     system       system_clkgroup      
+==============================================================================================================================
+
+
+
+
+
+@S0.0 |Clock Relationships
+*******************
+
+Clocks                       |    rise  to  rise     |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------------------
+Starting             Ending  |  constraint  slack    |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------------------
+System               System  |  1000.000    988.949  |  No paths    -      |  No paths    -      |  No paths    -    
+adder_four_bit|clk1  System  |  1000.000    988.935  |  No paths    -      |  No paths    -      |  No paths    -    
+=====================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+
+
+Input Ports: 
+
+Port     Starting            User           Arrival     Required            
+Name     Reference           Constraint     Time        Time         Slack  
+         Clock                                                              
+----------------------------------------------------------------------------
+clk1     System (rising)     NA             0.000       989.132      989.132
+clk2     System (rising)     NA             0.000       988.949      988.949
+clk3     System (rising)     NA             0.000       988.964      988.964
+clk4     System (rising)     NA             0.000       988.964      988.964
+============================================================================
+
+
+Output Ports: 
+
+Port     Starting      User           Arrival     Required          
+Name     Reference     Constraint     Time        Time         Slack
+         Clock                                                      
+--------------------------------------------------------------------
+cout     NA            NA             NA          NA           NA   
+sum1     NA            NA             NA          NA           NA   
+sum2     NA            NA             NA          NA           NA   
+sum3     NA            NA             NA          NA           NA   
+sum4     NA            NA             NA          NA           NA   
+====================================================================
+
+
+
+====================================
+@S0.0 |Detailed Report for Clock: adder_four_bit|clk1
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                        Starting                                                      Arrival            
+Instance                                Reference               Type     Pin     Net                  Time        Slack  
+                                        Clock                                                                            
+-------------------------------------------------------------------------------------------------------------------------
+FB1.uA.dut_inst.aptn_reset_sync_cin     adder_four_bit|clk1     FD       Q       dut_inst.cin_0_0     0.817       988.935
+=========================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+             Starting                                                   Required            
+Instance     Reference               Type     Pin      Net              Time         Slack  
+             Clock                                                                          
+--------------------------------------------------------------------------------------------
+sum2         adder_four_bit|clk1     Port     sum2     sum2_aptn_ft     1000.000     988.935
+sum1         adder_four_bit|clk1     Port     sum1     sum1_aptn_ft     1000.000     988.949
+cout         adder_four_bit|clk1     Port     cout     cout             1000.000     989.950
+sum3         adder_four_bit|clk1     Port     sum3     sum3             1000.000     989.950
+sum4         adder_four_bit|clk1     Port     sum4     sum4             1000.000     989.950
+============================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    = Required time:                         1000.000
+
+    - Propagation time:                      10.298
+    - Clock delay at starting point:         0.767
+    = Slack (critical) :                     988.935
+
+    Number of logic level(s):                4
+    Starting point:                          FB1.uA.dut_inst.aptn_reset_sync_cin / Q
+    Ending point:                            sum2 / sum2
+    The start point is clocked by            adder_four_bit|clk1 [rising] (rise=0.000 fall=500.000 period=1000.000) on pin C
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                   Pin      Pin               Arrival      No. of    
+Name                                    Type     Name     Dir     Delay     Time         Fan Out(s)
+---------------------------------------------------------------------------------------------------
+FB1.uA.dut_inst.aptn_reset_sync_cin     FD       Q        Out     0.050     0.817 r      -         
+dut_inst.cin_0_0                        Net      -        -       0.349     -            3         
+FB1.uA.dut_inst.sum2_obuf_RNO           LUT5     I0       In      -         1.166 r      -         
+FB1.uA.dut_inst.sum2_obuf_RNO           LUT5     O        Out     0.047     1.212 r      -         
+dut_inst.sum2_c                         Net      -        -       0.273     -            1         
+FB1.uA.dut_inst.sum2_obuf               OBUF     I        In      -         1.486 r      -         
+FB1.uA.dut_inst.sum2_obuf               OBUF     O        Out     1.026     2.511 r      -         
+sum2                                    Net      -        -       5.146     -            1         
+FB1.uB.sum2_0_ibuf                      IBUF     I        In      -         7.657 r      -         
+FB1.uB.sum2_0_ibuf                      IBUF     O        Out     0.790     8.447 r      -         
+sum2_c                                  Net      -        -       0.273     -            1         
+FB1.uB.sum2_aptn_ft_obuf                OBUF     I        In      -         8.721 r      -         
+FB1.uB.sum2_aptn_ft_obuf                OBUF     O        Out     1.026     9.747 r      -         
+sum2_aptn_ft                            Net      -        -       1.318     -            1         
+sum2                                    Port     sum2     Out     -         11.065 r     -         
+===================================================================================================
+Total path delay (propagation time + setup) of 10.298 is 2.939(28.5%) logic and 7.359(71.5%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Start clock path:
+
+Instance / Net                                                  Pin      Pin               Arrival     No. of    
+Name                                    Type                    Name     Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------------------
+Start Clock :                           adder_four_bit|clk1                                                      
+------------                                                                                                     
+clk1                                    Port                    clk1     In      -         0.000 r     -         
+clk1                                    Net                     -        -       0.000     -           2         
+FB1.uA.dut_inst.clk1_ibuf_iso           IBUFG                   I        In      -         0.000 r     -         
+FB1.uA.dut_inst.clk1_ibuf_iso           IBUFG                   O        Out     0.509     0.509 r     -         
+FB1.uA.dut_inst.clk1_ibuf_iso           Net                     -        -       0.157     -           1         
+FB1.uA.dut_inst.clk1_ibuf               BUFG                    I        In      -         0.666 r     -         
+FB1.uA.dut_inst.clk1_ibuf               BUFG                    O        Out     0.101     0.767 r     -         
+FB1.uA.dut_inst.clk1_c                  Net                     -        -       0.000     -           5         
+FB1.uA.dut_inst.aptn_reset_sync_cin     FD                      C        In      -         0.767 r     -         
+=================================================================================================================
+
+
+
+
+====================================
+@S0.0 |Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+             Starting                                 Arrival            
+Instance     Reference     Type     Pin      Net      Time        Slack  
+             Clock                                                       
+-------------------------------------------------------------------------
+clk2         System        Port     clk2     clk2     0.000       988.949
+clk3         System        Port     clk3     clk3     0.000       988.964
+clk4         System        Port     clk4     clk4     0.000       988.964
+=========================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+             Starting                                         Required            
+Instance     Reference     Type     Pin      Net              Time         Slack  
+             Clock                                                                
+----------------------------------------------------------------------------------
+sum2         System        Port     sum2     sum2_aptn_ft     1000.000     988.949
+sum1         System        Port     sum1     sum1_aptn_ft     1000.000     988.962
+cout         System        Port     cout     cout             1000.000     989.964
+sum3         System        Port     sum3     sum3             1000.000     989.964
+sum4         System        Port     sum4     sum4             1000.000     989.964
+==================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+      Requested Period:                      1000.000
+    = Required time:                         1000.000
+
+    - Propagation time:                      11.051
+    = Slack (non-critical) :                 988.949
+
+    Number of logic level(s):                5
+    Starting point:                          clk2 / clk2
+    Ending point:                            sum2 / sum2
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                             Pin      Pin               Arrival      No. of    
+Name                              Type     Name     Dir     Delay     Time         Fan Out(s)
+---------------------------------------------------------------------------------------------
+clk2                              Port     clk2     In      0.000     0.000 r      -         
+clk2                              Net      -        -       0.000     -            2         
+FB1.uA.dut_inst.clk2_ibuf         IBUF     I        In      -         0.000 r      -         
+FB1.uA.dut_inst.clk2_ibuf         IBUF     O        Out     0.790     0.790 r      -         
+dut_inst.clk2_c                   Net      -        -       0.349     -            3         
+FB1.uA.dut_inst.sum2_obuf_RNO     LUT5     I4       In      -         1.139 r      -         
+FB1.uA.dut_inst.sum2_obuf_RNO     LUT5     O        Out     0.060     1.199 r      -         
+dut_inst.sum2_c                   Net      -        -       0.273     -            1         
+FB1.uA.dut_inst.sum2_obuf         OBUF     I        In      -         1.472 r      -         
+FB1.uA.dut_inst.sum2_obuf         OBUF     O        Out     1.026     2.498 r      -         
+sum2                              Net      -        -       5.146     -            1         
+FB1.uB.sum2_0_ibuf                IBUF     I        In      -         7.644 r      -         
+FB1.uB.sum2_0_ibuf                IBUF     O        Out     0.790     8.434 r      -         
+sum2_c                            Net      -        -       0.273     -            1         
+FB1.uB.sum2_aptn_ft_obuf          OBUF     I        In      -         8.707 r      -         
+FB1.uB.sum2_aptn_ft_obuf          OBUF     O        Out     1.026     9.733 r      -         
+sum2_aptn_ft                      Net      -        -       1.318     -            1         
+sum2                              Port     sum2     Out     -         11.051 r     -         
+=============================================================================================
+Total path delay (propagation time + setup) of 11.051 is 3.692(33.4%) logic and 7.359(66.6%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+
+##### END OF TIMING REPORT #####]
+
+@S0.0 |Timing exceptions that could not be applied
+
+Finished final timing analysis (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 1241MB peak: 1241MB)
+
+
+Starting Time budgeting (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 1241MB peak: 1241MB)
+
+
+Starting CTB multihop constraint generation  (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 1241MB peak: 1241MB)
+
+
+Time-Budgeting stats:
+-----------------------------------------------------
+	 # partitions  			=          3
+	 # paths       			=         13
+		 # 2-hop paths     	=         13
+	 # timing segments 		=         26
+	 # logic segments  		=         16
+-----------------------------------------------------
+
+Inter-fpga paths are constrained by inferred clock, please define all inferred clocks
+Inferred clocks are:
+1) clock name: adder_four_bit|clk1, objects: clk1/clk1 
+Sample clocked instance: FB1.uA/dut_inst.aptn_reset_sync_cin, clock net = FB1.uA/dut_inst.clk1_c,
+number of paths clocked: 3
+
+@W: DE107 |CRITICAL WARNING: Downgraded from ERROR Inter-fpga paths are being constrained by inferred clock, please declare all inferred clocks 
+
+Finished CTB multihop constraint generation  (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 1241MB peak: 1241MB)
+
+
+Finished Time budgeting (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 1241MB peak: 1241MB)
+
+
+Finished timing report (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 1241MB peak: 1241MB)
+
+Mapper successful!
+
+At Mapper Exit (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 1241MB peak: 1241MB)
+
+Process took 0h:00m:06s realtime, 0h:00m:06s cputime
+# Wed Apr 19 10:35:40 2023
+
+###########################################################]

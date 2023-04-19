@@ -1,0 +1,271 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS Linux 7 (Core)
+Hostname: ws28
+max virtual memory: unlimited (bytes)
+max user processes: 4096
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/course/csr530606/Adder/|sg0
+Synopsys Xilinx Technology Mapper, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Id  Slack (ns)  Source Clock           Sink Clock  Exception  Hops  TDMs used per hop**  Total TDM delay (ns)*  User logic delay (ns)  Path delay (ns)  Requirement (ns)  Start Point                            End Point  Net Name  
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1   988.935     adder_four_bit|clk1:r  System:r    -          -     x1                   (trace:5.146) = 5.146  5.102                  11.065           1000.000          FB1.uA.dut_inst.aptn_reset_sync_cin.Q  sum2.sum2  sum2      
+2   988.949     adder_four_bit|clk1:r  System:r    -          -     x1                   (trace:5.146) = 5.146  5.089                  11.051           1000.000          FB1.uA.dut_inst.aptn_reset_sync_cin.Q  sum1.sum1  sum1      
+3   988.949     System:r               System:r    -          -     x1                   (trace:5.146) = 5.146  2.498                  11.051           1000.000          clk2.clk2                              sum2.sum2  sum2      
+4   988.962     System:r               System:r    -          -     x1                   (trace:5.146) = 5.146  2.485                  11.038           1000.000          clk2.clk2                              sum1.sum1  sum1      
+5   988.964     System:r               System:r    -          -     x1                   (trace:5.146) = 5.146  2.483                  11.051           1000.000          clk3.clk3                              sum2.sum2  sum2      
+6   988.964     System:r               System:r    -          -     x1                   (trace:5.146) = 5.146  2.483                  11.051           1000.000          clk4.clk4                              sum2.sum2  sum2      
+7   989.132     System:r               System:r    -          -     x1                   (trace:5.146) = 5.146  2.315                  11.051           1000.000          clk1.clk1                              sum2.sum2  sum2      
+8   989.158     System:r               System:r    -          -     x1                   (trace:5.146) = 5.146  2.289                  11.038           1000.000          clk1.clk1                              sum1.sum1  sum1      
+9   989.950     adder_four_bit|clk1:r  System:r    -          -     x1                   (trace:3.753) = 3.753  5.480                  10.050           1000.000          FB1.uA.dut_inst.aptn_reset_sync_cin.Q  sum3.sum3  c2        
+10  989.964     System:r               System:r    -          -     x1                   (trace:3.753) = 3.753  2.498                  10.036           1000.000          clk2.clk2                              sum3.sum3  c2        
+11  989.979     System:r               System:r    -          -     x1                   (trace:3.753) = 3.753  2.483                  10.036           1000.000          clk3.clk3                              sum3.sum3  c2        
+12  989.979     System:r               System:r    -          -     x1                   (trace:3.753) = 3.753  2.483                  10.036           1000.000          clk4.clk4                              sum3.sum3  c2        
+13  990.147     System:r               System:r    -          -     x1                   (trace:3.753) = 3.753  2.315                  10.036           1000.000          clk1.clk1                              sum3.sum3  c2        
+====================================================================================================================================================================================================================================
+
+Path: #1
+Starting point:                     FB1.uA/dut_inst.aptn_reset_sync_cin/Q
+Ending point:                       sum2/sum2
+The start point is clocked by       adder_four_bit|clk1 [rising]
+The end point is clocked by         System [rising]
+Arrival time                        11.065
+Required time                       1000.000
+Slack:                              988.935
+
+Instance / Net name                     Pin name     Type     FPGA               Arrival time
+---------------------------------------------------------------------------------------------
+FB1.uA/dut_inst.aptn_reset_sync_cin     Q            FD       FB1_uA                    0.817
+FB1.uA/dut_inst.sum2_obuf               O            OBUF     FB1_uA                    2.252
+sum2                                    -            Net      -                  -           
+FB1.uB/sum2_0_ibuf                      I            IBUF     FB1_uB                    7.658
+sum2                                    sum2         Port     adder_four_bit           11.065
+=============================================================================================
+
+Path: #2
+Starting point:                     FB1.uA/dut_inst.aptn_reset_sync_cin/Q
+Ending point:                       sum1/sum1
+The start point is clocked by       adder_four_bit|clk1 [rising]
+The end point is clocked by         System [rising]
+Arrival time                        11.051
+Required time                       1000.000
+Slack:                              988.949
+
+Instance / Net name                     Pin name     Type     FPGA               Arrival time
+---------------------------------------------------------------------------------------------
+FB1.uA/dut_inst.aptn_reset_sync_cin     Q            FD       FB1_uA                    0.817
+FB1.uA/dut_inst.sum1_obuf               O            OBUF     FB1_uA                    2.252
+sum1                                    -            Net      -                  -           
+FB1.uB/sum1_0_ibuf                      I            IBUF     FB1_uB                    7.644
+sum1                                    sum1         Port     adder_four_bit           11.051
+=============================================================================================
+
+Path: #3
+Starting point:                     clk2/clk2
+Ending point:                       sum2/sum2
+The start point is clocked by       System [rising]
+The end point is clocked by         System [rising]
+Arrival time                        11.051
+Required time                       1000.000
+Slack:                              988.949
+
+Instance / Net name           Pin name     Type     FPGA               Arrival time
+-----------------------------------------------------------------------------------
+clk2                          clk2         Port     adder_four_bit            0.000
+FB1.uA/dut_inst.sum2_obuf     O            OBUF     FB1_uA                    2.483
+sum2                          -            Net      -                  -           
+FB1.uB/sum2_0_ibuf            I            IBUF     FB1_uB                    7.644
+sum2                          sum2         Port     adder_four_bit           11.051
+===================================================================================
+
+Path: #4
+Starting point:                     clk2/clk2
+Ending point:                       sum1/sum1
+The start point is clocked by       System [rising]
+The end point is clocked by         System [rising]
+Arrival time                        11.038
+Required time                       1000.000
+Slack:                              988.962
+
+Instance / Net name           Pin name     Type     FPGA               Arrival time
+-----------------------------------------------------------------------------------
+clk2                          clk2         Port     adder_four_bit            0.000
+FB1.uA/dut_inst.sum1_obuf     O            OBUF     FB1_uA                    2.485
+sum1                          -            Net      -                  -           
+FB1.uB/sum1_0_ibuf            I            IBUF     FB1_uB                    7.631
+sum1                          sum1         Port     adder_four_bit           11.038
+===================================================================================
+
+Path: #5
+Starting point:                     clk3/clk3
+Ending point:                       sum2/sum2
+The start point is clocked by       System [rising]
+The end point is clocked by         System [rising]
+Arrival time                        11.051
+Required time                       1000.000
+Slack:                              988.964
+
+Instance / Net name           Pin name     Type     FPGA               Arrival time
+-----------------------------------------------------------------------------------
+clk3                          clk3         Port     adder_four_bit            0.000
+FB1.uA/dut_inst.sum2_obuf     O            OBUF     FB1_uA                    2.483
+sum2                          -            Net      -                  -           
+FB1.uB/sum2_0_ibuf            I            IBUF     FB1_uB                    7.644
+sum2                          sum2         Port     adder_four_bit           11.051
+===================================================================================
+
+Path: #6
+Starting point:                     clk4/clk4
+Ending point:                       sum2/sum2
+The start point is clocked by       System [rising]
+The end point is clocked by         System [rising]
+Arrival time                        11.051
+Required time                       1000.000
+Slack:                              988.964
+
+Instance / Net name           Pin name     Type     FPGA               Arrival time
+-----------------------------------------------------------------------------------
+clk4                          clk4         Port     adder_four_bit            0.000
+FB1.uA/dut_inst.sum2_obuf     O            OBUF     FB1_uA                    2.483
+sum2                          -            Net      -                  -           
+FB1.uB/sum2_0_ibuf            I            IBUF     FB1_uB                    7.644
+sum2                          sum2         Port     adder_four_bit           11.051
+===================================================================================
+
+Path: #7
+Starting point:                     clk1/clk1
+Ending point:                       sum2/sum2
+The start point is clocked by       System [rising]
+The end point is clocked by         System [rising]
+Arrival time                        11.051
+Required time                       1000.000
+Slack:                              989.132
+
+Instance / Net name           Pin name     Type     FPGA               Arrival time
+-----------------------------------------------------------------------------------
+clk1                          clk1         Port     adder_four_bit            0.000
+FB1.uA/dut_inst.sum2_obuf     O            OBUF     FB1_uA                    2.483
+sum2                          -            Net      -                  -           
+FB1.uB/sum2_0_ibuf            I            IBUF     FB1_uB                    7.644
+sum2                          sum2         Port     adder_four_bit           11.051
+===================================================================================
+
+Path: #8
+Starting point:                     clk1/clk1
+Ending point:                       sum1/sum1
+The start point is clocked by       System [rising]
+The end point is clocked by         System [rising]
+Arrival time                        11.038
+Required time                       1000.000
+Slack:                              989.158
+
+Instance / Net name           Pin name     Type     FPGA               Arrival time
+-----------------------------------------------------------------------------------
+clk1                          clk1         Port     adder_four_bit            0.000
+FB1.uA/dut_inst.sum1_obuf     O            OBUF     FB1_uA                    2.485
+sum1                          -            Net      -                  -           
+FB1.uB/sum1_0_ibuf            I            IBUF     FB1_uB                    7.631
+sum1                          sum1         Port     adder_four_bit           11.038
+===================================================================================
+
+Path: #9
+Starting point:                     FB1.uA/dut_inst.aptn_reset_sync_cin/Q
+Ending point:                       sum3/sum3
+The start point is clocked by       adder_four_bit|clk1 [rising]
+The end point is clocked by         System [rising]
+Arrival time                        10.050
+Required time                       1000.000
+Slack:                              989.950
+
+Instance / Net name                     Pin name     Type     FPGA               Arrival time
+---------------------------------------------------------------------------------------------
+FB1.uA/dut_inst.aptn_reset_sync_cin     Q            FD       FB1_uA                    0.817
+FB1.uA/dut_inst.c2_obuf                 O            OBUF     FB1_uA                    2.252
+c2                                      -            Net      -                  -           
+FB1.uB/dut_inst.c2_ibuf                 I            IBUF     FB1_uB                    6.264
+sum3                                    sum3         Port     adder_four_bit           10.050
+=============================================================================================
+
+Path: #10
+Starting point:                     clk2/clk2
+Ending point:                       sum3/sum3
+The start point is clocked by       System [rising]
+The end point is clocked by         System [rising]
+Arrival time                        10.036
+Required time                       1000.000
+Slack:                              989.964
+
+Instance / Net name         Pin name     Type     FPGA               Arrival time
+---------------------------------------------------------------------------------
+clk2                        clk2         Port     adder_four_bit            0.000
+FB1.uA/dut_inst.c2_obuf     O            OBUF     FB1_uA                    2.483
+c2                          -            Net      -                  -           
+FB1.uB/dut_inst.c2_ibuf     I            IBUF     FB1_uB                    6.251
+sum3                        sum3         Port     adder_four_bit           10.036
+=================================================================================
+
+Path: #11
+Starting point:                     clk3/clk3
+Ending point:                       sum3/sum3
+The start point is clocked by       System [rising]
+The end point is clocked by         System [rising]
+Arrival time                        10.036
+Required time                       1000.000
+Slack:                              989.979
+
+Instance / Net name         Pin name     Type     FPGA               Arrival time
+---------------------------------------------------------------------------------
+clk3                        clk3         Port     adder_four_bit            0.000
+FB1.uA/dut_inst.c2_obuf     O            OBUF     FB1_uA                    2.483
+c2                          -            Net      -                  -           
+FB1.uB/dut_inst.c2_ibuf     I            IBUF     FB1_uB                    6.251
+sum3                        sum3         Port     adder_four_bit           10.036
+=================================================================================
+
+Path: #12
+Starting point:                     clk4/clk4
+Ending point:                       sum3/sum3
+The start point is clocked by       System [rising]
+The end point is clocked by         System [rising]
+Arrival time                        10.036
+Required time                       1000.000
+Slack:                              989.979
+
+Instance / Net name         Pin name     Type     FPGA               Arrival time
+---------------------------------------------------------------------------------
+clk4                        clk4         Port     adder_four_bit            0.000
+FB1.uA/dut_inst.c2_obuf     O            OBUF     FB1_uA                    2.483
+c2                          -            Net      -                  -           
+FB1.uB/dut_inst.c2_ibuf     I            IBUF     FB1_uB                    6.251
+sum3                        sum3         Port     adder_four_bit           10.036
+=================================================================================
+
+Path: #13
+Starting point:                     clk1/clk1
+Ending point:                       sum3/sum3
+The start point is clocked by       System [rising]
+The end point is clocked by         System [rising]
+Arrival time                        10.036
+Required time                       1000.000
+Slack:                              990.147
+
+Instance / Net name         Pin name     Type     FPGA               Arrival time
+---------------------------------------------------------------------------------
+clk1                        clk1         Port     adder_four_bit            0.000
+FB1.uA/dut_inst.c2_obuf     O            OBUF     FB1_uA                    2.483
+c2                          -            Net      -                  -           
+FB1.uB/dut_inst.c2_ibuf     I            IBUF     FB1_uB                    6.251
+sum3                        sum3         Port     adder_four_bit           10.036
+=================================================================================
+

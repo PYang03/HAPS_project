@@ -1,0 +1,1 @@
+run partition -pcf Adder/partition.pcf -out pa0
