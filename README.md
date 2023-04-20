@@ -3,9 +3,17 @@
 #### by Pin-Yuan Yang, 111501544, VLSI/CAD SCLab, College of Semiconductor Research, NTHU, Taiwan 
 
 
-## Motivation
+## Introduction
 
-#### Personally, I don't have any experience of verilog, therefore it is very challenging for me to finish this project. I create a netlist of Synchronous 4-bit Adder, and convert their input with clock input. It's a simple netlist, but still makes me learned to do a full flow of FPGA implement with HAPS Protocompiler & vivado.
+#### I create a netlist of Synchronous 4-bit Adder, and convert their input with clock input.
+
+## Block diagram
+
+![alt text](http://url/to/img.png)
+
+## Conclution
+
+#### Personally, I don't have any experience of verilog, therefore it is very challenging for me to finish this project. It's a simple netlist, but still makes me learned to do a full flow of FPGA implement with HAPS Protocompiler & vivado.
     
 ## Files contain in this repo
 ```
