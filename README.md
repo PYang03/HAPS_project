@@ -10,16 +10,17 @@
 ## Block diagram
 
 ![alt text](https://github.com/PYang03/HAPS_project/blob/6af9bd62f7cbbad7b2f6a66bd2d591baa4a0f90d/images/block_diagram.png)
-![alt text](https://github.com/PYang03/HAPS_project/blob/6af9bd62f7cbbad7b2f6a66bd2d591baa4a0f90d/images/block_diagram_0.png)
+![alt text](https://github.com/PYang03/HAPS_project/blob/6af9bd62f7cbbad7b2f6a66bd2d591baa4a0f90d/images/block_diagram_1.png)
 
 ## The schematic of FPGA1 & FPGA2
 
 ![alt text](https://github.com/PYang03/HAPS_project/blob/6af9bd62f7cbbad7b2f6a66bd2d591baa4a0f90d/images/FB1_uA.png)
 ![alt text](https://github.com/PYang03/HAPS_project/blob/6af9bd62f7cbbad7b2f6a66bd2d591baa4a0f90d/images/FB1_uB.png)
 
-## Time budget
+## Timing budget reports
 
-![alt text](https://github.com/PYang03/HAPS_project/blob/6af9bd62f7cbbad7b2f6a66bd2d591baa4a0f90d/images/time_budget.png)
+![alt text](https://github.com/PYang03/HAPS_project/blob/6af9bd62f7cbbad7b2f6a66bd2d591baa4a0f90d/images/timing.png)
+![alt text](https://github.com/PYang03/HAPS_project/blob/6af9bd62f7cbbad7b2f6a66bd2d591baa4a0f90d/images/timing_min.png)
 
 ## Conclution
 
