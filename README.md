@@ -19,8 +19,8 @@
 
 ## Timing budget reports
 
-![alt text](https://github.com/PYang03/HAPS_project/blob/6af9bd62f7cbbad7b2f6a66bd2d591baa4a0f90d/images/timing.png)
-![alt text](https://github.com/PYang03/HAPS_project/blob/6af9bd62f7cbbad7b2f6a66bd2d591baa4a0f90d/images/timing_min.png)
+![alt text](https://github.com/PYang03/HAPS_project/blob/6653286cd6bf4cf5afe2bb47cded1364f161251f/images/timing.png)
+![alt text](https://github.com/PYang03/HAPS_project/blob/6653286cd6bf4cf5afe2bb47cded1364f161251f/images/timing_min.png)
 
 ## Conclution
 
