@@ -9,7 +9,7 @@
 
 ## Block diagram
 
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/PYang03/HAPS_project/blob/6af9bd62f7cbbad7b2f6a66bd2d591baa4a0f90d/images/block_diagram.png)
 
 ## Conclution
 
