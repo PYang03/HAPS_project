@@ -24,7 +24,7 @@
 
 ## Conclution
 
-#### Personally, I don't have any experience of verilog, therefore it is very challenging for me to finish this project. It's a simple netlist, but still makes me learned to do a full flow of FPGA implement with HAPS Protocompiler & vivado.
+#### Personally, I don't have any experience of verilog, therefore it is very challenging for me to finish this project. It's a simple netlist, however it still makes me learned to do a full flow of FPGA implement with HAPS Protocompiler & vivado.
     
 ## Files contain in this repo
 ```
